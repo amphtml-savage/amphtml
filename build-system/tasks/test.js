@@ -35,6 +35,16 @@ function getConfig() {
     return extend(obj, karmaConfig.firefox);
   }
 
+  if (argv.saucelabs) {
+    if (!process.env.SAUCE_USERNAME) {
+      throw new Error('Missing SAUCE_USERNAME Env variable');
+    }
+    if (!process.env.SAUCE_ACCESS_KEY) {
+      throw new Error('Missing SAUCE_ACCESS_KEY Env variable');
+    }
+    return extend(obj, karmaConfig.saucelabs);
+  }
+
   return extend(obj, karmaConfig.default);
 }
 
@@ -51,6 +61,12 @@ gulp.task('test', ['build'], function(done) {
 
   if (argv.verbose || argv.v) {
     config.client.captureConsole = true;
+  }
+
+  if (argv.saucelabs && process.argv.TRAVIS
+      && process.env.MAIN_REPO && process.env.TRAVIS_PULL_REQUEST) {
+    console./*OK*/info('Deactivated for PRs to main repo.');
+    return;
   }
 
   karma.start(config, done);
