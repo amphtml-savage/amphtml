@@ -8,7 +8,7 @@ I am an instance of [Savage](https://github.com/twbs/savage).
 
 ## Configuration
 
-I live on a Google Compute Engine instance owned by @cramforce on savage.nonblocking.io.
+I live on a Google Compute Engine instance owned by @cramforce on `savage.nonblocking.io`.
 
 - started by `/home/malte_ubl/start_savage.sh`
 - config in `savage/src/main/resources/application.conf`
