@@ -1,4 +1,4 @@
-# Hi, I am AMP Sauce – The AMP Project Sauce Labs bot.
+# Hi, I am @ampsauce – The AMP Project Sauce Labs bot.
 
 I build pull requests against [AMP HTML](https://github.com/ampproject/amphtml) on Sauce Labs. See also the [Sauce Labs section](https://github.com/ampproject/amphtml/blob/master/DEVELOPING.md#saucelabs) in AMP's developers doc.
 
