@@ -10,6 +10,7 @@ I am an instance of [Savage](https://github.com/twbs/savage).
 
 I live on a Google Compute Engine instance owned by @cramforce on `savage.nonblocking.io`.
 
+- my passwords are in Google's password store owned by malteubl@.
 - started by `/home/malte_ubl/start_savage.sh`
 - config in `savage/src/main/resources/application.conf`
 - after change `cd savage`, `sbt assembly`, `cp target/scala-2.11/savage-assembly-1.0.jar ../`, restart
