@@ -2,7 +2,7 @@
 
 I build pull requests against [AMP HTML](https://github.com/ampproject/amphtml) on Sauce Labs. See also the [Sauce Labs section](https://github.com/ampproject/amphtml/blob/master/DEVELOPING.md#saucelabs) in AMP's developers doc.
 
-My builds are here: https://travis-ci.org/amphtml-savage/amphtml/builds
+My builds are here: https://travis-ci.org/ampsauce/amphtml/builds
 
 I am an instance of [Savage](https://github.com/twbs/savage).
 
